@@ -1,4 +1,8 @@
 ---
+import projectOne from "../images/project-one.png";
+import projectTwo from "../images/project-two.png";
+import projectThree from "../images/project-three.png";
+import projectFour from "../images/project-four.png";
 
 interface Project {
   title: string;
@@ -10,32 +14,32 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Project One",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+One",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Deployed",
+    title: "TayCORP",
+    image: projectOne.src,
+    link: "https://taycorp-peru.com/",
+    preview: "https://taycorp-peru.com/",
+    status: "Desplegado",
   },
   {
-    title: "Project Two",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Two",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "On Development",
+    title: "Sergenind",
+    image: projectTwo.src,
+    link: "https://sergenind.com/",
+    preview: "https://sergenind.com/",
+    status: "Desplegado",
   },
   {
-    title: "Project Three",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Three",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Contributor",
+    title: "Kare Salud Renal",
+    image: projectThree.src,
+    link: "https://karesaludrenal.com/",
+    preview: "https://karesaludrenal.com/",
+    status: "Desplegado",
   },
   {
-    title: "Project Four",
-    image: "https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Four",
-    link: "https://github.com",
-    preview: "https://example.com",
-    status: "Deployed",
+    title: "Agencia Online",
+    image: projectFour.src,
+    link: "https://soyjhoelfernandez.com/",
+    preview: "https://soyjhoelfernandez.com/",
+    status: "En desarrollo",
   },
 ];
 ---
@@ -45,8 +49,8 @@ const projects: Project[] = [
   class="py-12 border-t border-[#ffffff10] text-[var(--white)]"
 >
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">My work</h2>
-    <h3 class="text-4xl md:text-5xl font-medium mb-8">Projects</h3>
+    <h2 class="text-lg text-[var(--sec)] mb-2 shiny-sec">Mis trabajos</h2>
+    <h3 class="text-4xl md:text-5xl font-medium mb-8">Proyectos</h3>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
@@ -116,7 +120,7 @@ const projects: Project[] = [
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >
-      <span class="md:text-lg text-md">More projects on</span>
+      <span class="md:text-lg text-md">Más proyectos en</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
